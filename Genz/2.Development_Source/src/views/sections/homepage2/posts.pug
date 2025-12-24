@@ -1,0 +1,63 @@
+.row.mt-70
+    -
+        const postLists3 = [
+            {
+                image: 'assets/imgs/page/homepage2/news3.png',
+                title: 'Are You Ready To Go Home After The Sunset View?',
+                link: 'single-sidebar.html',
+                cat: '#Travel',
+                read: '3'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/news1.png',
+                title: 'Life is as free as eagles, or is it just loneliness?',
+                link: 'single-sidebar.html',
+                cat: '#Lifestyle',
+                read: '8'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/news2.png',
+                title: 'Beautiful aurora in the sky over the city, a spectacular sight',
+                link: 'single-sidebar.html',
+                cat: '#Photograph',
+                read: '12'
+            },
+            {
+                image: 'assets/imgs/page/homepage2/news4.png',
+                title: 'Unique architectural designs but not lacking in solid structure',
+                link: 'single-sidebar.html',
+                cat: '#Design',
+                read: '25'
+            }
+        ]
+    each post in postLists3
+        .col-lg-6.wow.animate__animated.animate__fadeIn(data-wow-delay='0')
+            .card-blog-1.hover-up
+                .card-image.mb-20
+                    a.post-type(href='blog-archive.html')
+                    a(href= post.link)
+                        img(src= post.image, alt="Genz")
+                .card-info
+                    .row
+                        .col-7
+                            a.color-gray-700.text-sm(href="blog-archive.html")= post.cat
+                        .col-5.text-end
+                            span.color-gray-700.text-sm.timeread= post.read
+                                |  mins read
+                    a(href= post.link)
+                        h4.color-white.mt-20= post.title
+                    .row.align-items-center.mt-25
+                        .col-7
+                            .box-author
+                                img(src="assets/imgs/page/homepage1/author.jpg", alt="Genz")
+                                .author-info
+                                    h6.color-gray-700 Joseph
+                                    span.color-gray-700.text-sm 25 April 2022
+                        .col-5.text-end
+                            a.readmore.color-gray-500.text-sm(href= post.link)
+                                span Read more
+.text-center
+    a.btn.btn-linear.btn-load-more.wow.animate__animated.animate__zoomIn
+        | Show More Posts
+        |
+        i.fi-rr-arrow-small-right

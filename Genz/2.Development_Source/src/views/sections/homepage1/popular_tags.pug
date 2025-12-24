@@ -1,0 +1,87 @@
+h2.color-linear.d-inline-block.mb-10.wow.animate__animated.animate__fadeInUp Popular Tags
+p.text-lg.color-gray-500.wow.animate__animated.animate__fadeInUp Most searched keywords
+
+.row.mt-70.mb-50
+    -
+        const tagLists = [
+            {
+                image: 'assets/imgs/page/homepage1/tag1.png',
+                title: 'Travel',
+                link: 'blog-archive.html',
+                delay: '0s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag2.png',
+                title: ' Culture',
+                link: 'blog-archive.html',
+                delay: '0.1s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag3.png',
+                title: 'Lifestyle',
+                link: 'blog-archive.html',
+                delay: '0.2s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag4.png',
+                title: 'Fashion',
+                link: 'blog-archive.html',
+                delay: '0.3s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag5.png',
+                title: 'Food',
+                link: 'blog-archive.html',
+                delay: '0.4s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag6.png',
+                title: 'Space',
+                link: 'blog-archive.html',
+                delay: '0.5s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag7.png',
+                title: 'Animal',
+                link: 'blog-archive.html',
+                delay: '0.1s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag8.png',
+                title: 'Minimal',
+                link: 'blog-archive.html',
+                delay: '0.2s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag9.png',
+                title: 'Interior',
+                link: 'blog-archive.html',
+                delay: '0.3s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag10.png',
+                title: 'Plant',
+                link: 'blog-archive.html',
+                delay: '0.4s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag11.png',
+                title: 'Nature',
+                link: 'blog-archive.html',
+                delay: '0.5s'
+            },
+            {
+                image: 'assets/imgs/page/homepage1/tag12.png',
+                title: 'Business',
+                link: 'blog-archive.html',
+                delay: '0.6s'
+            }
+        ]
+    each tag in tagLists
+        .col-xl-2.col-lg-3.col-md-4.col-sm-4.col-6
+            .card-style-2.hover-up.hover-neon.wow.animate__animated.animate__fadeIn(data-wow-delay= tag.delay)
+                .card-image
+                    a(href= tag.link)
+                        img(src= tag.image, alt="Genz")
+                .card-info
+                    a.color-gray-500(href= tag.link)= tag.title

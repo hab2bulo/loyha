@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+
+block title
+	title Genz - About me
+
+block header
+	include ../components/header.pug
+
+block content
+	.cover-home1
+		.container
+			.row
+				.col-xl-1
+				.col-xl-10.col-lg-12
+					include ../sections/homepage1/banner.pug
+					include ../sections/about/features.pug
+					include ../sections/about/latest_projects.pug
+					include ../sections/about/pricing.pug
+					include ../sections/about/faqs.pug
+					include ../sections/about/testimonials.pug
+					include ../sections/homepage3/partners.pug

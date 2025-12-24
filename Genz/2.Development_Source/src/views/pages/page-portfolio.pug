@@ -1,0 +1,18 @@
+extends ../layouts/master.pug
+
+block title
+	title Genz - Portfolio
+
+block header
+	include ../components/header.pug
+
+block content
+	.cover-home1
+		.container
+			.row
+				.col-xl-1
+				.col-xl-10.col-lg-12
+					include ../sections/portfolio/latest_projects_3col.pug
+					include ../sections/portfolio/features.pug
+					include ../sections/about/testimonials.pug
+					include ../sections/homepage3/partners.pug

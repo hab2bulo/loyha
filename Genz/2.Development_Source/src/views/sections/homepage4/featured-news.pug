@@ -1,0 +1,86 @@
+.row.mt-90.mb-50
+    .col-lg-12
+        .box-list-posts
+            .row
+                .col-lg-7
+                    -
+                        const postLists3 = [
+                            {
+                                image: 'assets/imgs/page/homepage4/news1.png',
+                                title: 'I work best when my space is filled with inspiration',
+                                description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                                link: 'single-sidebar.html'
+
+                            }
+                        ]
+                    each post in postLists3
+                        .card-blog-1.card-blog-2.hover-up.wow.animate__animated.animate__fadeIn(data-wow-delay='0')
+                            .card-image.mb-20
+                                a.post-type(href='#')
+                                a(href= post.link)
+                                    img(src= post.image, alt="Genz")
+                            .card-info
+                                a(href= post.link)
+                                    h4.color-white.mt-30= post.title
+                                p.mt-25.text-lg.color-gray-700= post.description
+                                .row.align-items-center.mt-45
+                                    .col-7
+                                        .box-author
+                                            img(src="assets/imgs/page/homepage1/author.jpg", alt="Genz")
+                                            .author-info
+                                                h6.color-gray-700 Joseph
+                                                span.color-gray-700.text-sm 25 April 2022
+                                    .col-5.text-end
+                                        a.readmore.color-gray-500.text-sm(href= post.link)
+                                            span Read more
+                .col-lg-5
+                    .row
+                        -
+                            const postLists = [
+                                {
+                                    image: 'assets/imgs/page/homepage4/img1.png',
+                                    title: '10 States At Risk of Rural Hospital Closures',
+                                    description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                                    link: 'single-sidebar.html',
+                                    tag: 'Working Tips',
+                                    delay: '0.1s'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage4/img2.png',
+                                    title: 'U.S. Interventions in Latin America, in Photos',
+                                    description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                                    link: 'single-sidebar.html',
+                                    tag: 'Working Tips',
+                                    delay: '0.2s'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage4/img3.png',
+                                    title: '2019 Best Cars for the Money',
+                                    description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                                    link: 'single-sidebar.html',
+                                    tag: 'Working Tips',
+                                    delay: '0.3s'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage4/img4.png',
+                                    title: 'How to View Breast Cancer Survival Rates',
+                                    description: 'Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far',
+                                    link: 'single-sidebar.html',
+                                    tag: 'Working Tips',
+                                    delay: '0.4s'
+                                }
+                            ]
+                        each post in postLists
+                            .col-lg-12
+                                .card-list-posts.card-list-posts-small.mb-30.wow.animate__animated.animate__fadeIn(data-wow-delay= post.delay)
+                                    .card-image.hover-up
+                                        a(href= post.link)
+                                            img(src= post.image, alt="Genz")
+                                    .card-info
+                                        a.btn.btn-tag.bg-gray-800.hover-up.mb-10.text-xs(href='blog-archive.html')= post.tag
+                                        a(href= post.link)
+                                            h5.mb-10.color-white= post.title
+                                        .row.mt-10
+                                            .col-12
+                                                span.calendar-icon.color-gray-700.text-sm.mr-20 29 May 2022
+                                                span.color-gray-700.text-sm.timeread 3 mins read

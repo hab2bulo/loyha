@@ -1,0 +1,17 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = '404'
+block title
+    title 404 - Page not found
+
+block header
+    include ../components/header-small.pug
+
+block content
+    .cover-home3.shadow-page-404
+        .container
+            .row
+                .col-xl-10.col-lg-12.ml-auto.mr-auto
+                    include ../sections/404/404_sec1.pug
+
+    block scripts-custom
